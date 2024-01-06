@@ -2,7 +2,7 @@
 ### Description
 > We recently changed the root password for santa as he always broke our system. However, I think he has hidden some backdoor in there. Please help us find it to save christmas!
 ### Solution
-When logging in with the provided credentials, you can find a "normal" ubuntu 23.04. Running [linPEAS]() sadly doesnt reveal to much. But when looking at the modified date of the setuid binaries, you can find that the passwd file seemed to be more recent than the others. You can then copy the binary with scp to your local machine. When you decompile the binary, you can find that when using the -E Argument the following code get called:
+When logging in with the provided credentials, you can find a "normal" ubuntu 23.04. Running [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) sadly doesnt reveal to much. But when looking at the modified date of the setuid binaries, you can find that the passwd file seemed to be more recent than the others. You can then copy the binary with scp to your local machine. When you decompile the binary, you can find that when using the -E Argument the following code get called:
 ```c
 case 'E':
 	setuid(0);
