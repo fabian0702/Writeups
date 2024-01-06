@@ -47,6 +47,6 @@ When you then execute
 SALAMI=https://www.youtube.com/watch?v=dQw4w9WgXcQ passwd -E
 ```
  you get the flag.  
-A solve.py can be found [here](./15-pREVesc/solve.py).  
+A solve.py can be found [here](solve.py).  
   
 Flag: **HV23{3v1l_p455wd}**   
